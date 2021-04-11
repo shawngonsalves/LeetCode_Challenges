@@ -11,4 +11,3 @@ class Solution:
         d['l'] = d['l'] // 2
         d['o'] = d['o'] // 2
         return min(d.values())
-        print(d)
