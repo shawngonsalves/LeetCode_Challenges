@@ -27,3 +27,7 @@ class Solution:
                     res.append([r,c])
         return res
 
+'''
+Runtime: 288 ms, faster than 62.40% of Python3 online submissions for Pacific Atlantic Water Flow.
+Memory Usage: 15.6 MB, less than 48.86% of Python3 online submissions for Pacific Atlantic Water Flow.
+'''
