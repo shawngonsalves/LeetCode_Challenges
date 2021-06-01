@@ -40,4 +40,9 @@ class Solution:
         
         return res
 
-        
+'''
+Success
+Details 
+Runtime: 1344 ms, faster than 45.36% of Python3 online submissions for Longest Palindromic Substring.
+Memory Usage: 14.1 MB, less than 93.48% of Python3 online submissions for Longest Palindromic Substring.
+'''
