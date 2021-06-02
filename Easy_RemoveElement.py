@@ -1,0 +1,9 @@
+
+
+
+'''
+Success
+Details 
+Runtime: 32 ms, faster than 72.52% of Python3 online submissions for Remove Element.
+Memory Usage: 14.3 MB, less than 44.56% of Python3 online submissions for Remove Element.
+'''
