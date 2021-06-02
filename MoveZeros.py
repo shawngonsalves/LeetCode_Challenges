@@ -24,3 +24,11 @@ class Solution:
             nums.append(0)
 
         return nums
+
+'''
+Success
+Details 
+Runtime: 124 ms, faster than 14.51% of Python3 online submissions for Move Zeroes.
+Memory Usage: 15.4 MB, less than 16.59% of Python3 online submissions for Move Zeroes.
+Next challenges:
+'''
