@@ -22,4 +22,10 @@ class Solution:
         else:
             return (nums[n//2 - 1] + nums[n//2])/2.
 
-        
+
+'''
+Success
+Details 
+Runtime: 88 ms, faster than 83.14% of Python3 online submissions for Median of Two Sorted Arrays.
+Memory Usage: 14.4 MB, less than 92.55% of Python3 online submissions for Median of Two Sorted Arrays.
+'''
