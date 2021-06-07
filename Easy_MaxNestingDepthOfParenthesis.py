@@ -39,3 +39,10 @@ class Solution:
                 maxcount = lcount-rcount
         if lcount==rcount:
             return maxcount
+
+'''
+Success
+Details 
+Runtime: 32 ms, faster than 58.47% of Python3 online submissions for Maximum Nesting Depth of the Parentheses.
+Memory Usage: 14.1 MB, less than 69.67% of Python3 online submissions for Maximum Nesting Depth of the Parentheses.
+'''
