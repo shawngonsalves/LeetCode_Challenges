@@ -23,3 +23,19 @@ Input: s = "(1+(2*3)+((8)/4))+1"
 Output: 3
 Explanation: Digit 8 is inside of 3 nested parentheses in the string.
 '''
+class Solution:
+    def maxDepth(self, s: str) -> int:
+        lcount = 0
+        rcount = 0
+        maxcount = 0
+        for i in s:
+            
+            if i == '(':
+                lcount +=1
+
+            elif i ==')':
+                rcount +=1
+            if lcount - rcount > maxcount:
+                maxcount = lcount-rcount
+        if lcount==rcount:
+            return maxcount
