@@ -20,7 +20,30 @@ Output: 2
 Explanation: "abb" -> "bb" -> "". 
 Remove palindromic subsequence "a" then "bb".
 '''
+class Solution:
+    def removePalindromeSub(self, s: str) -> int:
 
+        r = s[::-1]
+
+        def pali(s,r):
+            if s==r:
+                return True
+            else:
+                return False
+
+
+
+        if pali(s,r)== True:
+
+            if s=='':
+                step = 0
+
+            else:
+                step = 1
+        else:
+            step = 2
+
+        return step
 
 
 '''
