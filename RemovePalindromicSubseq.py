@@ -21,3 +21,11 @@ Explanation: "abb" -> "bb" -> "".
 Remove palindromic subsequence "a" then "bb".
 '''
 
+
+
+'''
+Success
+Details 
+Runtime: 24 ms, faster than 93.22% of Python3 online submissions for Remove Palindromic Subsequences.
+Memory Usage: 14.2 MB, less than 66.10% of Python3 online submissions for Remove Palindromic Subsequences.
+'''
