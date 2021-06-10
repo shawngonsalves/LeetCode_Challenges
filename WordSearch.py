@@ -46,3 +46,7 @@ class Solution:
                 if dfs(r, c, 0) : return True
         return False
 
+'''
+Runtime: 5440 ms, faster than 24.78% of Python3 online submissions for Word Search.
+Memory Usage: 14.3 MB, less than 41.87% of Python3 online submissions for Word Search.
+'''
