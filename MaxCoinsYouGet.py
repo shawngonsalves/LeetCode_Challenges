@@ -37,7 +37,7 @@ class Solution:
             
         return optimal
             
-  '''
+'''
 Runtime: 608 ms, faster than 51.15% of Python3 online submissions for Maximum Number of Coins You Can Get.
 Memory Usage: 26.5 MB, less than 74.83% of Python3 online submissions for Maximum Number of Coins You Can Get.
-  '''          
+'''          
