@@ -21,3 +21,20 @@ Choose the triplet (1, 2, 4), Alice Pick the pile with 4 coins, you the pile wit
 The maximum number of coins which you can have are: 7 + 2 = 9.
 On the other hand if we choose this arrangement (1, 2, 8), (2, 4, 7) you only get 2 + 4 = 6 coins which is not optimal.
 '''
+
+class Solution:
+    def maxCoins(self, piles: List[int]) -> int:
+        piles = sorted(piles, reverse = True)
+        optimal = 0
+        i = 0
+        chances = 0
+        while chances < len(piles)//3:
+
+            optimal+= piles[i+1]
+            
+            i+=2
+            chances+=1
+            
+        return optimal
+            
+            
