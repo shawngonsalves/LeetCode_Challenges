@@ -42,3 +42,10 @@ class Solution:
                     good.add(i)
                     
         return len(good) ==3
+
+'''
+Success
+Details 
+Runtime: 2016 ms, faster than 88.58% of Python3 online submissions for Merge Triplets to Form Target Triplet.
+Memory Usage: 59.4 MB, less than 75.90% of Python3 online submissions for Merge Triplets to Form Target Triplet.
+'''
