@@ -26,3 +26,36 @@ Explanation: After removing the character at index 3, "abcbddddd" becomes "abcdd
 "abcd" is a subsequence of "abcddddd".
 '''
 
+class Solution:
+    def maximumRemovals(self, s: str, p: str, removable: List[int]) -> int:
+        
+        def isSubseq(s,subseq, removed):
+            i1 = 0
+            i2 = 0
+            
+            while i1 < len(s) and i2 < len(subseq):
+                if i1 in removed or s[i1] != subseq[i2]:
+                    i1+=1
+                    continue
+                i1+=1
+                i2+=1
+            return i2 == len(subseq)
+        
+        res = 0
+        l, r = 0, len(removable) - 1
+        
+        while l <= r:
+            m = (l+r)//2
+            removed  = set(removable[:m+1])
+            if isSubseq(s, p, removed):
+                res = max(res, m+1)
+                l = m+1
+            else:
+                r = m-1
+                
+        return res
+
+'''
+Runtime: 4072 ms, faster than 45.45% of Python3 online submissions for Maximum Number of Removable Characters.
+Memory Usage: 32.1 MB, less than 17.70% of Python3 online submissions for Maximum Number of Removable Characters.
+'''
