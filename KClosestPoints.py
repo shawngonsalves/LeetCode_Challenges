@@ -23,3 +23,39 @@ Input: points = [[3,3],[5,-1],[-2,4]], k = 2
 Output: [[3,3],[-2,4]]
 Explanation: The answer [[-2,4],[3,3]] would also be accepted.
 '''
+
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        if len(points) == k:
+            return points      
+        points.sort(key = lambda x: sqrt((x[0]**2) + (x[1]**2)))
+        return (points[:k])
+        '''if len(points) == k:
+            return points
+        p = points
+        a = []
+        for i in points:
+            d = ((0-(i[0]))**2)+ ((0-(i[1]))**2)
+            a.append(d)    
+        res = []
+        m = a
+        temp = a
+        print(m)
+        for count,value in enumerate(m):
+            
+            b = min(a)
+            
+            print('now b is ', b)
+            print('now value is', value)
+            if b == value:
+                print('went here')
+                
+                res.append(points[count])
+                print('res is', res)
+                
+                temp.remove(b)
+                k-=1
+                print('now k is',  k)
+                if k==0:
+                    return res'''
+                
