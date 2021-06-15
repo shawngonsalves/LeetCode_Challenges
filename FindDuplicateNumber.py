@@ -45,3 +45,8 @@ class Solution:
             print("hare",b)
         
         return b
+
+'''
+Runtime: 620 ms, faster than 51.88% of Python3 online submissions for Find the Duplicate Number.
+Memory Usage: 28.1 MB, less than 51.06% of Python3 online submissions for Find the Duplicate Number.
+'''
