@@ -24,3 +24,10 @@ Input: s = "aiohn", indices = [3,1,4,2,0]
 Output: "nihao"
 '''
 
+class Solution:
+    def restoreString(self, s: str, indices: List[int]) -> str:
+        ans = list(s)
+        for i in range(len(s)):
+            ans[indices[i]] = s[i]
+        print(ans)
+        return ''.join(ans)
