@@ -31,3 +31,10 @@ class Solution:
             ans[indices[i]] = s[i]
         print(ans)
         return ''.join(ans)
+
+'''
+Success
+Details 
+Runtime: 52 ms, faster than 82.42% of Python3 online submissions for Shuffle String.
+Memory Usage: 14.2 MB, less than 51.97% of Python3 online submissions for Shuffle String.
+'''
