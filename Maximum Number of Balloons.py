@@ -11,3 +11,8 @@ class Solution:
         d['l'] = d['l'] // 2
         d['o'] = d['o'] // 2
         return min(d.values())
+
+'''
+Runtime: 36 ms, faster than 54.39% of Python3 online submissions for Maximum Number of Balloons.
+Memory Usage: 14 MB, less than 98.87% of Python3 online submissions for Maximum Number of Balloons.
+'''
