@@ -59,3 +59,9 @@ class Solution:
                 if k==0:
                     return res'''
                 
+'''
+Success
+Details 
+Runtime: 620 ms, faster than 95.03% of Python3 online submissions for K Closest Points to Origin.
+Memory Usage: 19.7 MB, less than 75.77% of Python3 online submissions for K Closest Points to Origin.
+'''
