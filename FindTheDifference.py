@@ -27,3 +27,9 @@ class Solution:
             if t.count(char) != s.count(char):
                 return char
 
+'''
+Success
+Details 
+Runtime: 32 ms, faster than 82.72% of Python3 online submissions for Find the Difference.
+Memory Usage: 14.2 MB, less than 82.85% of Python3 online submissions for Find the Difference.
+'''
