@@ -50,4 +50,11 @@ class Solution:
                 
         backtrack(0)
         return res
+
+'''
+Success
+Details 
+Runtime: 52 ms, faster than 90.12% of Python3 online submissions for N-Queens.
+Memory Usage: 14.9 MB, less than 11.25% of Python3 online submissions for N-Queens.
+'''
                 
