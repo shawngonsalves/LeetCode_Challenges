@@ -60,3 +60,10 @@ class Solution:
             water += max(0,minLR[i] - height[i])
             
         return water
+
+'''
+Success
+Details 
+Runtime: 1276 ms, faster than 5.02% of Python3 online submissions for Trapping Rain Water.
+Memory Usage: 15.5 MB, less than 5.53% of Python3 online submissions for Trapping Rain Water.
+'''
