@@ -61,3 +61,8 @@ class MinStack:
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.getMin()
+
+'''
+Runtime: 56 ms, faster than 90.26% of Python3 online submissions for Min Stack.
+Memory Usage: 18.2 MB, less than 34.17% of Python3 online submissions for Min Stack.
+'''
