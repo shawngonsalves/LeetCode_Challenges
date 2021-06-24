@@ -58,4 +58,7 @@ class Solution:
                 addRoom(r, c-1)
             dist +=1
             
-            
+'''
+Runtime: 280 ms, faster than 64.99% of Python3 online submissions for Walls and Gates.
+Memory Usage: 20.8 MB, less than 23.09% of Python3 online submissions for Walls and Gates.
+'''
