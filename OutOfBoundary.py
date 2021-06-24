@@ -35,4 +35,8 @@ class Solution:
             return ans
         
         return rec(startRow,startColumn, maxMove)%(10**9+7)
-            
+
+'''
+Runtime: 136 ms, faster than 65.54% of Python3 online submissions for Out of Boundary Paths.
+Memory Usage: 18.4 MB, less than 40.16% of Python3 online submissions for Out of Boundary Paths.
+'''
