@@ -27,5 +27,6 @@ class Solution:
         return max(lis)
 
 '''
-
+Runtime: 4000 ms, faster than 26.16% of Python3 online submissions for Longest Increasing Subsequence.
+Memory Usage: 14.5 MB, less than 74.03% of Python3 online submissions for Longest Increasing Subsequence.
 '''
