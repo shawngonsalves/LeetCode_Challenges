@@ -19,3 +19,19 @@ Input: nums = [5,6,7,8]
 Output: 8
 Explanation: It is optimal to choose the subsequence [8] with alternating sum 8.
 '''
+
+class Solution:
+    def maxAlternatingSum(self, nums: List[int]) -> int:
+        evensum,oddsum = 0,0
+        
+        for i in range(len(nums)-1,-1,-1):
+            tempeven = max(oddsum+ nums[i], evensum) 
+            tempodd =  max(evensum - nums[i], oddsum)
+            
+            evensum,oddsum = tempeven,tempodd
+        return evensum
+
+'''
+Runtime: 1200 ms, faster than 16.67% of Python3 online submissions for Maximum Alternating Subsequence Sum.
+Memory Usage: 28.7 MB, less than 33.33% of Python3 online submissions for Maximum Alternating Subsequence Sum.
+'''
