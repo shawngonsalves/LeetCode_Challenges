@@ -27,3 +27,32 @@ Input: root = [1]
 Output: 1
 Explanation: Root is considered as good.
 '''
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+class Solution:
+    def goodNodes(self, root: TreeNode) -> int:
+        
+        if not root:
+            return 0
+        self.res = 0
+        self.DFS(root, root.val)
+        return self.res
+    
+    def DFS(self, root, cur_max):
+        
+        if root.val >= cur_max:
+            self.res += 1
+            cur_max = root.val
+        
+        if root.left:
+            self.DFS(root.left, cur_max)
+            
+        if root.right:
+            self.DFS(root.right, cur_max)
+            
+        
