@@ -55,4 +55,7 @@ class Solution:
         if root.right:
             self.DFS(root.right, cur_max)
             
-        
+'''
+Runtime: 224 ms, faster than 97.34% of Python3 online submissions for Count Good Nodes in Binary Tree.
+Memory Usage: 33.4 MB, less than 42.02% of Python3 online submissions for Count Good Nodes in Binary Tree.
+'''        
