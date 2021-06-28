@@ -15,3 +15,17 @@ Example 2:
 Input: nums = [0,3,7,2,5,8,4,6,0,1]
 Output: 9
 '''
+
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        numSet = set(nums)
+        maxlen = 0
+        
+        for i in nums:
+            if i-1 not in numSet:
+                length = 0
+
+                while (i+length) in numSet:
+                    length+=1
+                maxlen = max(length, maxlen)
+        return maxlen
