@@ -55,3 +55,7 @@ class Solution:
                             q.append(neiWord)
             res+=1
         return 0
+'''
+Runtime: 144 ms, faster than 70.89% of Python3 online submissions for Word Ladder.
+Memory Usage: 18.8 MB, less than 13.61% of Python3 online submissions for Word Ladder.
+'''
