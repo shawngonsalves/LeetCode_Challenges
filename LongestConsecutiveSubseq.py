@@ -29,3 +29,8 @@ class Solution:
                     length+=1
                 maxlen = max(length, maxlen)
         return maxlen
+
+'''
+Runtime: 1948 ms, faster than 16.60% of Python3 online submissions for Longest Consecutive Sequence.
+Memory Usage: 25.5 MB, less than 70.20% of Python3 online submissions for Longest Consecutive Sequence.
+'''
