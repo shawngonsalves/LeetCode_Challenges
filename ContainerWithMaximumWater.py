@@ -50,3 +50,7 @@ class Solution:
                 else:
                     r-=1
         return(max_area)
+'''
+Runtime: 768 ms, faster than 35.37% of Python3 online submissions for Container With Most Water.
+Memory Usage: 27.7 MB, less than 14.50% of Python3 online submissions for Container With Most Water.
+'''
