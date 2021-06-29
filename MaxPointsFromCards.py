@@ -36,3 +36,7 @@ class Solution:
             
         return res
             
+'''
+Runtime: 412 ms, faster than 71.19% of Python3 online submissions for Maximum Points You Can Obtain from Cards.
+Memory Usage: 27.6 MB, less than 30.38% of Python3 online submissions for Maximum Points You Can Obtain from Cards.
+'''
