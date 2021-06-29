@@ -24,3 +24,29 @@ Example 4:
 Input: height = [1,2,1]
 Output: 2
 '''
+'''
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        max_area = 0
+        for l in range(0,len(height)):
+            for r in range(l+1, len(height)):
+
+                max_area = max(max_area, (r-l)*min(height[l],height[r]))
+                
+        return (max_area)
+#This solution is correct but not on it's TC is O(n^2)
+'''
+
+        l = 0
+        r = len(height)-1
+        max_area = 0
+        for i in range(len(height)):
+            if l == r:
+                break
+            else:
+                max_area = max(max_area,(r-l)*min(height[l],height[r]))
+                if height[l]< height[r]:
+                    l+=1
+                else:
+                    r-=1
+        return(max_area)
