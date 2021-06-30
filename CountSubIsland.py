@@ -48,3 +48,8 @@ class Solution:
                     count += 1
                     
         return count
+
+'''
+Runtime: 3384 ms, faster than 69.02% of Python3 online submissions for Count Sub Islands.
+Memory Usage: 115.7 MB, less than 22.60% of Python3 online submissions for Count Sub Islands.
+'''
