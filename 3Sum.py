@@ -41,3 +41,8 @@ class Solution:
                     while nums[l] ==nums[l-1] and l < r:
                         l+=1
         return res
+
+'''
+Runtime: 796 ms, faster than 80.21% of Python3 online submissions for 3Sum.
+Memory Usage: 17.3 MB, less than 91.10% of Python3 online submissions for 3Sum.
+'''
