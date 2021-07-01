@@ -27,3 +27,14 @@ heights:  [5,1,2,3,4]
 expected: [1,2,3,4,5]
 All indices do not match.
 '''
+
+class Solution:
+    def heightChecker(self, heights: List[int]) -> int:
+        sorted_heights=sorted(heights)
+        c=0
+        for i in range(len(heights)):
+            if heights[i] != sorted_heights[i]:
+                c +=1
+        return c
+                
+            
