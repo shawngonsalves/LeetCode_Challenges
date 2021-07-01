@@ -36,5 +36,10 @@ class Solution:
             if heights[i] != sorted_heights[i]:
                 c +=1
         return c
+
+'''
+Runtime: 28 ms, faster than 96.62% of Python3 online submissions for Height Checker.
+Memory Usage: 14.3 MB, less than 41.59% of Python3 online submissions for Height Checker.
+'''
                 
             
