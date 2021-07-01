@@ -50,3 +50,8 @@ class Solution:
             if not dfs(crs):
                 return False
         return True
+
+'''
+Runtime: 92 ms, faster than 90.68% of Python3 online submissions for Course Schedule.
+Memory Usage: 17.1 MB, less than 32.47% of Python3 online submissions for Course Schedule.
+'''
