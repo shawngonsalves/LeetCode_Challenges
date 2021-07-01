@@ -33,3 +33,8 @@ class Solution:
             
         dfs(0)
         return res
+
+'''
+Runtime: 36 ms, faster than 55.99% of Python3 online submissions for Subsets.
+Memory Usage: 14.4 MB, less than 77.63% of Python3 online submissions for Subsets.
+'''
