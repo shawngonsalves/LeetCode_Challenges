@@ -37,3 +37,7 @@ class Solution:
                     break
         return True
                     
+'''
+Runtime: 36 ms, faster than 67.81% of Python3 online submissions for Verifying an Alien Dictionary.
+Memory Usage: 14.5 MB, less than 15.19% of Python3 online submissions for Verifying an Alien Dictionary.
+'''
