@@ -42,4 +42,7 @@ class Solution:
 
         return self.dfs(root.left, targetSum, total) or self.dfs(root.right, targetSum, total)
         
-        
+'''
+Runtime: 32 ms, faster than 98.77% of Python3 online submissions for Path Sum.
+Memory Usage: 15.8 MB, less than 75.52% of Python3 online submissions for Path Sum.
+'''        
