@@ -22,3 +22,9 @@ Input: root = [1,2], targetSum = 0
 Output: []
 '''
 
+
+
+'''
+Runtime: 44 ms, faster than 76.63% of Python3 online submissions for Path Sum II.
+Memory Usage: 18.9 MB, less than 41.67% of Python3 online submissions for Path Sum II.
+'''
