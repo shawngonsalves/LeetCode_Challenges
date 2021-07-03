@@ -17,3 +17,29 @@ Example 2:
 Input: root = [1,2,3], targetSum = 5
 Output: false
 '''
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def hasPathSum(self, root: TreeNode, targetSum: int) -> bool:
+
+        return self.dfs(root, targetSum, 0)
+
+        
+    def dfs(self, root, targetSum, total):
+        if not root:
+            return False
+
+        total += root.val
+        #print(total)
+
+        if not root.left and not root.right:
+            return total == targetSum
+
+        return self.dfs(root.left, targetSum, total) or self.dfs(root.right, targetSum, total)
+        
+        
