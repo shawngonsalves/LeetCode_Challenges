@@ -35,3 +35,8 @@ class Solution:
             dp = [dp0, dp1, dp2]
             
         return min(dp)
+
+'''
+Runtime: 64 ms, faster than 60.84% of Python3 online submissions for Paint House.
+Memory Usage: 14.3 MB, less than 78.80% of Python3 online submissions for Paint House.
+'''
