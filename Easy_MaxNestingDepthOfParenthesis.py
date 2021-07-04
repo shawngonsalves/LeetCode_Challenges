@@ -37,8 +37,8 @@ class Solution:
                 rcount +=1
             if lcount - rcount > maxcount:
                 maxcount = lcount-rcount
-        if lcount==rcount:
-            return maxcount
+
+        return maxcount
 
 '''
 Success
