@@ -49,3 +49,19 @@ n == dist.length == speed.length
 1 <= n <= 105
 1 <= dist[i], speed[i] <= 105
 '''
+class Solution:
+    def eliminateMaximum(self, dist: List[int], speed: List[int]) -> int:
+        reach = []
+        
+        for d, s in zip(dist, speed):
+            reach.append(math.ceil(d/s))
+            
+        reach.sort()
+        minute = 0
+        res=0
+        for i in range(len(reach)):
+            if i >= reach[i]:
+                return res
+            else:
+                res+=1
+        return res
