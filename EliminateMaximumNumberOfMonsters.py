@@ -65,3 +65,8 @@ class Solution:
             else:
                 res+=1
         return res
+
+'''
+Runtime: 860 ms, faster than 14.29% of Python3 online submissions for Eliminate Maximum Number of Monsters.
+Memory Usage: 29.8 MB, less than 100.00% of Python3 online submissions for Eliminate Maximum Number of Monsters.
+'''
