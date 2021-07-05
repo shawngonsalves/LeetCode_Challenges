@@ -36,3 +36,8 @@ class Solution:
         ltail.next = rnode.next
         rtail.next = None
         return lnode.next
+
+'''
+Runtime: 36 ms, faster than 62.53% of Python3 online submissions for Partition List.
+Memory Usage: 14.3 MB, less than 57.81% of Python3 online submissions for Partition List.
+'''
