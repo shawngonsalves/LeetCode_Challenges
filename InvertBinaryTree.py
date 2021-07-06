@@ -40,3 +40,9 @@ class Solution:
         self.invertTree(root.right)
         
         return root
+
+
+'''
+Runtime: 28 ms, faster than 87.08% of Python3 online submissions for Invert Binary Tree.
+Memory Usage: 13.9 MB, less than 98.42% of Python3 online submissions for Invert Binary Tree.
+'''
