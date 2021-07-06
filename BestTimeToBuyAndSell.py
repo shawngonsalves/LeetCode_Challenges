@@ -33,6 +33,9 @@ class Solution:
             r+=1
         return maxyet
                 
-            
+'''
+Runtime: 1248 ms, faster than 15.41% of Python3 online submissions for Best Time to Buy and Sell Stock.
+Memory Usage: 25.1 MB, less than 80.84% of Python3 online submissions for Best Time to Buy and Sell Stock.
+'''           
             
         
