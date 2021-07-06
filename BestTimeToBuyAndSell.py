@@ -17,3 +17,22 @@ Input: prices = [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0.
 '''
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+
+        l = 0
+        r = 1
+        maxyet = 0
+        while r < len(prices):
+            if (prices[l] < prices[r]):
+                maxyet = max(maxyet, prices[r]-prices[l])
+                print(maxyet)
+            else:
+                l = r
+            r+=1
+        return maxyet
+                
+            
+            
+        
