@@ -25,3 +25,10 @@ class Solution:
                 a, b = b, a
             a.next = self.mergeTwoLists(a.next, b)
         return a or b
+
+
+'''
+Runtime: 40 ms, faster than 50.54% of Python3 online submissions for Merge Two Sorted Lists.
+Memory Usage: 14.4 MB, less than 29.87% of Python3 online submissions for Merge Two Sorted Lists.
+
+'''
