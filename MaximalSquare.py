@@ -43,3 +43,8 @@ class Solution:
     
         helper(0,0)
         return max(cache.values()) ** 2
+
+'''
+Runtime: 276 ms, faster than 27.43% of Python3 online submissions for Maximal Square.
+Memory Usage: 24.1 MB, less than 5.12% of Python3 online submissions for Maximal Square.
+'''
