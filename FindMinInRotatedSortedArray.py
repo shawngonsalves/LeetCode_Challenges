@@ -47,3 +47,8 @@ class Solution:
             else:
                 r = m-1
         return res
+    
+'''
+Runtime: 44 ms, faster than 36.50% of Python3 online submissions for Find Minimum in Rotated Sorted Array.
+Memory Usage: 14.7 MB, less than 26.10% of Python3 online submissions for Find Minimum in Rotated Sorted Array.
+'''
