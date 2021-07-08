@@ -34,3 +34,7 @@ class Solution:
             
         return prev
 
+'''
+Runtime: 32 ms, faster than 87.76% of Python3 online submissions for Reverse Linked List.
+Memory Usage: 15.7 MB, less than 42.80% of Python3 online submissions for Reverse Linked List.
+'''
