@@ -106,3 +106,8 @@ class Solution:
             backtrack(0, '')
      
         return res'''
+
+'''
+Runtime: 32 ms, faster than 61.97% of Python3 online submissions for Letter Combinations of a Phone Number.
+Memory Usage: 14.5 MB, less than 30.79% of Python3 online submissions for Letter Combinations of a Phone Number.
+'''
