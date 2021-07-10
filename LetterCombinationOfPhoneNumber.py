@@ -23,3 +23,58 @@ Example 3:
 Input: digits = "2"
 Output: ["a","b","c"]
 '''
+
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        final = []
+        main1 = []
+        letter = {'2':'abc','3':'def','4':'ghi','5':'jkl','6':'mno','7':'pqrs','8':'tuv','9':'wxyz'}
+        if digits =='':
+            return []
+        elif len(digits) == 1:
+            return list(letter[digits])
+        elif len(digits) == 2:
+            chosen1 = str(letter[digits[0]])
+            chosen2 = str(letter[digits[1]])
+        elif len(digits) == 3:
+            chosen = letter[digits[0]] +','+ letter[digits[1]] +','+ letter[digits[2]]
+            chosen1 = str(letter[digits[0]])
+            chosen2 = str(letter[digits[1]])
+            chosen3 = str(letter[digits[2]])
+
+        elif len(digits) == 4:
+            chosen = letter[digits[0]] +','+ letter[digits[1]]+','+ letter[digits[2]] +','+ letter[digits[3]]
+            chosen1 = str(letter[digits[0]])
+            chosen2 = str(letter[digits[1]])
+            chosen3 = str(letter[digits[2]])
+            chosen4 = str(letter[digits[3]])
+
+        else:
+            print('not applicable')
+
+        if len(digits) == 2:
+            for i in range(len(letter[digits[0]])):
+                for j in range(len(letter[digits[1]])):
+                    main = chosen1[i]+chosen2[j]
+                    main1.append(main)
+
+            return main1
+
+        elif len(digits) == 3:
+            for i in range(len(letter[digits[0]])):
+                for j in range(len(letter[digits[1]])):
+                    for k in range(len(letter[digits[2]])):   
+                        main = chosen1[i]+chosen2[j]+chosen3[k]
+                        main1.append(main)
+
+            return main1
+
+        elif len(digits) == 4:
+            for i in range(len(letter[digits[0]])):
+                for j in range(len(letter[digits[1]])):
+                    for k in range(len(letter[digits[2]])):   
+                        for l in range(len(letter[digits[3]])): 
+                            main = chosen1[i]+chosen2[j]+chosen3[k]+chosen4[l]
+                            main1.append(main)
+
+            return main1
