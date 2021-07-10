@@ -49,6 +49,9 @@ class Solution:
             second.next = tmp1
             first, second = tmp1,tmp2
             
-            
+'''
+Runtime: 84 ms, faster than 94.99% of Python3 online submissions for Reorder List.
+Memory Usage: 23.3 MB, less than 46.13% of Python3 online submissions for Reorder List.
+'''            
             
         
