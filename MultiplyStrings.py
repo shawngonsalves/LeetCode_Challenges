@@ -39,4 +39,7 @@ class Solution:
         res = map(str, res[beg:])
         return "".join(res)
             
-                
+'''
+Runtime: 288 ms, faster than 6.85% of Python3 online submissions for Multiply Strings.
+Memory Usage: 13.8 MB, less than 99.98% of Python3 online submissions for Multiply Strings.
+'''                
