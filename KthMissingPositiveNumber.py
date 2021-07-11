@@ -17,3 +17,12 @@ Input: arr = [1,2,3,4], k = 2
 Output: 6
 Explanation: The missing positive integers are [5,6,7,...]. The 2nd missing positive integer is 6.
 '''
+
+class Solution:
+    def findKthPositive(self, arr: List[int], k: int) -> int:
+        out = []        
+        for i in range(1, arr[-1]+k+1):
+            if i not in arr:
+                out.append(i)
+        return out[k-1]
+            
