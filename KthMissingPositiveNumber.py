@@ -26,3 +26,7 @@ class Solution:
                 out.append(i)
         return out[k-1]
             
+'''
+Runtime: 192 ms, faster than 5.47% of Python3 online submissions for Kth Missing Positive Number.
+Memory Usage: 14.5 MB, less than 39.53% of Python3 online submissions for Kth Missing Positive Number.
+'''
