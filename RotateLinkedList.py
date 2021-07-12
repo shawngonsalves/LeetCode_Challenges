@@ -39,3 +39,8 @@ class Solution:
         curr.next = None
         tail.next = head
         return newhead
+
+'''
+Runtime: 40 ms, faster than 50.85% of Python3 online submissions for Rotate List.
+Memory Usage: 14.1 MB, less than 84.47% of Python3 online submissions for Rotate List.
+'''
