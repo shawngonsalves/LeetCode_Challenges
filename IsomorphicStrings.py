@@ -39,3 +39,8 @@ class Solution:
             if s_key[s_letter] != t_key[t_letter]: return False
             
         return True
+
+'''
+Runtime: 52 ms, faster than 30.66% of Python3 online submissions for Isomorphic Strings.
+Memory Usage: 14.3 MB, less than 88.04% of Python3 online submissions for Isomorphic Strings.
+'''
