@@ -33,3 +33,21 @@ Explanation: The 4 palindromic subsequences of length 3 are:
 - "aba" (subsequence of "bbcbaba")
 '''
 
+class Solution:
+    def countPalindromicSubsequence(self, s: str) -> int:
+        res, left = set(), set()
+        right = collections.Counter(s)
+        
+        
+        for i in range(len(s)):
+            right[s[i]]-=1
+            if right[s[i]]==0:
+                right.pop(s[i])
+                
+            for j in range(26):
+                c = chr(ord('a')+j)
+                if c in left and c in right:
+                    res.add((s[i],c))
+            left.add(s[i])
+        print(res)    
+        return len(res)
