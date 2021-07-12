@@ -51,3 +51,8 @@ class Solution:
             left.add(s[i])
         print(res)    
         return len(res)
+
+'''
+Runtime: 6756 ms, faster than 25.00% of Python3 online submissions for Unique Length-3 Palindromic Subsequences.
+Memory Usage: 15.5 MB, less than 25.00% of Python3 online submissions for Unique Length-3 Palindromic Subsequences.
+'''
