@@ -46,4 +46,7 @@ class Solution:
         r = len(nums)-1
         helper(l,r)
 
-        
+'''
+Runtime: 264 ms, faster than 30.40% of Python3 online submissions for Rotate Array.
+Memory Usage: 25.5 MB, less than 54.94% of Python3 online submissions for Rotate Array.
+'''
