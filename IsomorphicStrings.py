@@ -20,3 +20,22 @@ Example 3:
 Input: s = "paper", t = "title"
 Output: true
 '''
+
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        s_key = {}
+        t_key = {}
+        if len(s) != len(t): return False
+        
+        for i in range(len(s)):
+            
+            s_letter = s[i]
+            t_letter = t[i]
+            
+            if s_letter not in s_key: s_key[s_letter] = i
+                
+            if t_letter not in t_key: t_key[t_letter] = i
+                
+            if s_key[s_letter] != t_key[t_letter]: return False
+            
+        return True
