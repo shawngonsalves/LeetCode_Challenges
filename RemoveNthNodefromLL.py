@@ -38,4 +38,7 @@ class Solution:
         l.next = l.next.next
         
         return dummy.next
-            
+'''
+Runtime: 44 ms, faster than 14.16% of Python3 online submissions for Remove Nth Node From End of List.
+Memory Usage: 14.3 MB, less than 14.61% of Python3 online submissions for Remove Nth Node From End of List.
+'''
