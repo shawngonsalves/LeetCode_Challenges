@@ -54,3 +54,8 @@ class Solution:
             
         backtrack([], 0, target)
         return res
+
+'''
+Runtime: 88 ms, faster than 50.68% of Python3 online submissions for Combination Sum II.
+Memory Usage: 14.4 MB, less than 19.42% of Python3 online submissions for Combination Sum II.
+'''
