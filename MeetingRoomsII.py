@@ -34,3 +34,7 @@ class Solution:
             
         return res
 
+'''
+Runtime: 80 ms, faster than 55.57% of Python3 online submissions for Meeting Rooms II.
+Memory Usage: 17.5 MB, less than 64.99% of Python3 online submissions for Meeting Rooms II.
+'''
