@@ -39,5 +39,8 @@ class Solution:
             
         return res
             
-                
+'''
+Runtime: 56 ms, faster than 84.65% of Python3 online submissions for Longest Substring Without Repeating Characters.
+Memory Usage: 14.3 MB, less than 79.21% of Python3 online submissions for Longest Substring Without Repeating Characters.s
+'''
         
