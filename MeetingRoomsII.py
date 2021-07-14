@@ -12,3 +12,25 @@ Example 2:
 Input: intervals = [[7,10],[2,4]]
 Output: 1
 '''
+
+class Solution:
+    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        start = [intervals[i][0] for i in range(len(intervals))]
+        start.sort()
+        
+        end = [intervals[i][1] for i in range(len(intervals))]
+        end.sort()
+        
+        s,e = 0,0
+        res, count =0, 0
+        while s < len(intervals):
+            if start[s] < end[e]:
+                count+=1
+                s+=1
+            else:
+                count-=1
+                e+=1
+            res = max(res,count)
+            
+        return res
+
