@@ -49,3 +49,36 @@ Example 2:
 Input: dummy_input = [""]
 Output: [""] Medium_Encode&DecodeStrings
 '''
+
+class Codec:
+    def encode(self, strs: [str]) -> str:
+        """Encodes a list of strings to a single string.
+        """
+        res = ''
+        print(strs)
+        for s in strs:
+            res+= str(len(s)) + '#' + s
+            
+        return res
+        
+
+    def decode(self, s: str) -> [str]:
+        """Decodes a single string to a list of strings.
+        """
+        res = []
+        i = 0
+        print(s)
+        while i < len(s):
+            j = i
+            while s[j] != '#':
+                j+=1
+            length = int(s[i:j])
+            print(length)
+            res.append(s[j+1: j+1+length])
+            i= j+1+length
+        return res
+
+
+# Your Codec object will be instantiated and called as such:
+# codec = Codec()
+# codec.decode(codec.encode(strs))
