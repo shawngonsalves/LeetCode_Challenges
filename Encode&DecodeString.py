@@ -82,3 +82,9 @@ class Codec:
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()
 # codec.decode(codec.encode(strs))
+
+
+'''
+Runtime: 72 ms, faster than 38.73% of Python3 online submissions for Encode and Decode Strings.
+Memory Usage: 14.6 MB, less than 71.55% of Python3 online submissions for Encode and Decode Strings.
+'''
