@@ -28,4 +28,8 @@ class Solution:
         if l and r:
             return l.val == r.val and self.dfs(l.left, r.right) and self.dfs(l.right, r.left)
         return l == r
-        
+
+'''
+Runtime: 36 ms, faster than 60.40% of Python3 online submissions for Symmetric Tree.
+Memory Usage: 14.4 MB, less than 49.93% of Python3 online submissions for Symmetric Tree.
+'''        
