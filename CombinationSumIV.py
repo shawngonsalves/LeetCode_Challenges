@@ -37,3 +37,7 @@ class Solution:
                 
         return dp[target]
                 
+'''
+Runtime: 44 ms, faster than 44.21% of Python3 online submissions for Combination Sum IV.
+Memory Usage: 14.2 MB, less than 87.55% of Python3 online submissions for Combination Sum IV.
+'''
