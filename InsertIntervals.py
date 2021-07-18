@@ -45,3 +45,8 @@ class Solution:
                 
         res.append(newInterval)
         return res
+
+'''
+Runtime: 76 ms, faster than 87.69% of Python3 online submissions for Insert Interval.
+Memory Usage: 17.5 MB, less than 32.39% of Python3 online submissions for Insert Interval.
+'''
