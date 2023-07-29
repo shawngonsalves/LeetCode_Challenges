@@ -45,7 +45,7 @@ class Solution:
             curr = curr.next
         return False
 
-
+# Easy
 
 # Runtime 77 ms Beats 42.69%
 # Memory 20.9 MB Beats 9.73%
