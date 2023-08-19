@@ -20,7 +20,7 @@ class Event:
 
 
 
-class MarketingEvent:
+class Marketing:
     def marketingEvents(events):
         customer_events = [] #list of tuple with City and date of event
         for event in events:
@@ -35,12 +35,6 @@ class MarketingEvent:
         EventDates = [event.Date for event.Date in events]
         heapq.heapify(EventDates)
 
-        
-
-
-
-
-
 
 
 def main():
@@ -50,7 +44,7 @@ def main():
 
     customers: Customer = [("John", "john@gmail.com",'1998-02-03')]
 
-    marketingEvents = MarketingEvent()
+    marketingEvents = Marketing()
     Event.marketingEvents(events)
     Event.customer_birthday_events(events, 3)
 
