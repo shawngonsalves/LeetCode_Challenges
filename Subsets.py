@@ -17,12 +17,12 @@ Output: [[],[0]]
 
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        res = []
+        output = []
         
         subset = []
         def dfs(i):
             if i >= len(nums):
-                res.append(subset.copy())
+                output.append(subset.copy())
                 return
             
             subset.append(nums[i])
@@ -32,7 +32,7 @@ class Solution:
             dfs(i+1)
             
         dfs(0)
-        return res
+        return output
 
 '''
 Runtime: 36 ms, faster than 55.99% of Python3 online submissions for Subsets.
