@@ -38,3 +38,25 @@ class Solution:
 Runtime 59 ms Beats 21.83%
 Memory 16.9 MB Beats 79.72%
 '''
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        l = 0
+        s = list(s)
+        for r in range(len(s)):
+            if s[r] == " " or r == len(s) - 1:
+                temp_l, temp_r = l, r - 1
+
+                if r == len(s) - 1:
+                    temp_r = r
+
+                while temp_l < temp_r:
+                    s[temp_l], s[temp_r] = s[temp_r], s[temp_l]  
+                    temp_l +=1
+                    temp_r -=1
+                l = r + 1
+        return "".join(s)
+    
+'''
+Runtime 88 ms Beats 7.48%
+Memory 16.8 MB Beats 93.8%
+'''
