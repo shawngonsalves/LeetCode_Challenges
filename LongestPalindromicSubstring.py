@@ -46,3 +46,8 @@ Details
 Runtime: 1344 ms, faster than 45.36% of Python3 online submissions for Longest Palindromic Substring.
 Memory Usage: 14.1 MB, less than 93.48% of Python3 online submissions for Longest Palindromic Substring.
 '''
+
+'''
+Runtime482 ms Beats 60.76%
+Memory 16.5 MB Beats 23.34%
+'''
