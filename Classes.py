@@ -48,3 +48,13 @@ print(emp_1.pay)
 
 #Lecture 2: 
 
+class Whatever:
+
+    def __init__(self, val1):
+        self.val1 = val1
+
+    def method1(self):
+        return self.val1
+
+person1 = Whatever(450)
+print(person1.val1)
