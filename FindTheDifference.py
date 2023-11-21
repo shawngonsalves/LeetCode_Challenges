@@ -20,12 +20,39 @@ Example 3:
 Input: s = "a", t = "aa"
 Output: "a"
 '''
-
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
+
+        #Solution 1
+        for i in t:
+            if t.count(i) != s.count(i):
+                return i
+
+
+        #Solution2
+        hashMapS = {}
+        hashMapT = {}
+
+        for char in s:
+            hashMapS[char] = 1+ hashMapS.get(char, 0)
+
         for char in t:
-            if t.count(char) != s.count(char):
-                return char
+            hashMapT[char] = 1 + hashMapT.get(char, 0)
+        
+        for c in hashMapT:
+            if c not in hashMapS:
+                return c
+            if hashMapS[c] < hashMapT[c]:
+                return c
+
+        #Solution 3
+        sum_s, sum_t = 0, 0
+        for c in s:
+            sum_s += ord(c)
+        for c in t:
+            sum_t += ord(c)
+        
+        return chr(sum_t - sum_s)
 
 '''
 Success
