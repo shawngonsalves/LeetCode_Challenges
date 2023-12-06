@@ -50,3 +50,23 @@ class Solution:
 Runtime 45 ms Beats 25.4%
 Memory 16.2 MB Beats 40.24%
 '''
+
+class Solution:
+    def totalMoney(self, n: int) -> int:
+
+        #Solution 2
+        weeks = n // 7
+        low = 28
+        high = 28 + 7 * (weeks - 1)
+        res = (weeks * (low + high)  // 2)
+
+
+        for i in range(n%7):
+          res += i + weeks + 1
+
+        return res
+    
+'''
+Runtime 39 ms Beats 60.62%
+Memory 16.3 MB Beats 40.24%
+'''
