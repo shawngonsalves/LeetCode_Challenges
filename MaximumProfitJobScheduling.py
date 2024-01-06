@@ -59,3 +59,34 @@ class Solution:
         
 # Runtime 569 ms Beats 56.98%
 # Memory 49.6 MB Beats 24.46%        
+
+class Solution:
+    def jobScheduling(self, startTime: List[int], endTime: List[int], profit: List[int]) -> int:
+
+        intervals = sorted(zip(startTime, endTime, profit))
+        cache = {}
+        def dfs(i):
+            if i == len(intervals):
+                return 0
+            if i in cache:
+                return cache[i]
+            #not include
+            res = dfs(i+1)
+
+            #include
+            # j = i + 1
+            # while j < len(intervals):
+            #     if intervals[i][1] <= intervals[j][0] :
+            #         break
+            #     j += 1
+            #bisect
+            j = bisect.bisect(intervals, (intervals[i][1], -1, -1))
+            cache[i] = res = max(res, intervals[i][2]+ dfs(j))
+            return res
+        
+        return dfs(0)
+    
+'''
+Runtime 610 ms Beats 68.83%
+Memory 53.4 MB Beats 27.14%
+'''
