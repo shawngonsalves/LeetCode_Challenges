@@ -40,3 +40,24 @@ class Solution:
 Runtime 32 ms Beats 78.59% of users with Python3
 Memory 16.40 MB Beats 82.57% of users with Python3
 '''
+class Solution:
+    def sequentialDigits(self, low: int, high: int) -> List[int]:
+        res = []
+
+        queue = deque(range(1, 10))
+        while queue:
+            n = queue.popleft()
+            if n > high:
+                continue
+            if low <= n <= high:
+                res.append(n)
+            ones = n % 10
+            if ones < 9: # 123 -> 1230 + 4
+                seq = n* 10 + (ones + 1)
+                queue.append(seq)
+        return res
+
+'''
+Runtime 34 ms Beats 70.64% of users with Python3
+Memory 16.59 MB Beats 63.61% of users with Python3
+'''
