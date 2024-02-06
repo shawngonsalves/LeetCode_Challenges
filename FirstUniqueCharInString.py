@@ -36,3 +36,21 @@ class Solution:
 Runtime 92 ms Beats 63.39% of users with Python3
 Memory 16.85 MB Beats 59.25% of users with Python3
 '''
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        count = collections.defaultdict(int)
+
+        for char in s:
+            count[char] += 1
+
+        for char in range(len(s)):
+            
+            if count[s[char]] == 1:
+                return char
+        return -1
+    
+'''
+Runtime 89 ms Beats 67.41% of users with Python3
+Memory 16.75 MB Beats 66.96% of users with Python3
+'''
