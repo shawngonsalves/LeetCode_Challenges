@@ -97,3 +97,24 @@ class Solution:
 Runtime 1047 ms Beats 35.42% of users with Python3
 Memory 48.05 MB Beats 35.42% of users with Python3
 '''
+
+class Solution:
+    def rearrangeArray(self, nums: List[int]) -> List[int]:
+        i, j  = 0, 1
+        res = [0] * len(nums)
+
+        for k in range(len(nums)):
+            if nums[k] > 0:
+                res[i] = nums[k]
+                i += 2
+            else:
+                res[j] = nums[k]
+                j +=2
+
+        return res
+
+
+'''
+Runtime 1023b ms Beats 56.51% of users with Python3
+Memory 47.50 MB Beats 60.45% of users with Python3
+'''
