@@ -68,3 +68,32 @@ class Solution:
 Runtime 1051 ms Beats 33.26% of users with Python3
 Memory 51.03 MB Beats 6.29% of users with Python3
 '''
+class Solution:
+    def rearrangeArray(self, nums: List[int]) -> List[int]:
+        positive = deque()
+        negative = deque()
+
+        for n in nums:
+            if n >= 0:
+                positive.append(n)
+            else:
+                negative.append(n)
+        res = []
+
+        for i in range(len(nums)- 1):
+            if i == 0:
+                res.append(positive[0])
+                positive.popleft()
+            if i % 2 == 0:
+                res.append(negative[0])
+                negative.popleft()
+            else:
+                res.append(positive[0])
+                positive.popleft()
+
+        return res
+
+'''
+Runtime 1047 ms Beats 35.42% of users with Python3
+Memory 48.05 MB Beats 35.42% of users with Python3
+'''
