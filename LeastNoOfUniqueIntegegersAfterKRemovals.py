@@ -66,5 +66,4 @@ class Solution:
 '''
 Runtime 316 ms Beats 92.47% of users with Python3
 Memory 33.31 MB Beats 84.81% of users with Python3
-
 '''
