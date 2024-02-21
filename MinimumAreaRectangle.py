@@ -42,6 +42,8 @@ class Solution:
 
         for x1, y1 in points:
             for x2, y2 in seen:
+                if (x1 == x2) or (y1 == y2):
+                    continue
                 if (x1, y2) in seen and (x2, y1) in seen:
                     area = abs(x2- x1)*abs(y2-y1)
                     if area and area < res:
@@ -50,6 +52,6 @@ class Solution:
         return res if res < float("inf") else 0
 
 '''
-Runtime 736 ms Beats 69.59% of users with Python3
+Runtime 613 ms Beats 85.58% of users with Python3
 Memory 16.89 MB Beats 90.44% of users with Python3
 '''
