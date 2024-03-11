@@ -36,3 +36,19 @@ class Solution:
 Runtime 54 ms Beats 29.95% of users with Python3
 Memory 16.78 MB Beats 52.43% of users with Python3
 '''
+
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        s2 = set(nums2)
+
+        ans = set()
+        for x in nums1:
+            if x in s2:
+                ans.add(x)
+
+        return ans
+    
+'''
+Runtime 36 ms Beats 98.34% of users with Python3
+Memory 16.64 MB Beats 91.17% of users with Python3
+'''
