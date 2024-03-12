@@ -50,3 +50,14 @@ class Solution:
 Runtime 29 ms Beats 90.45% of users with Python3
 Memory 16.56 MB Beats 48.59% of users with Python3
 '''
+
+class Solution:
+    def minAddToMakeValid(self, s: str) -> int:
+        while "()" in s:
+            s= s.replace("()","")
+        return len(s)
+
+'''
+Runtime 34 ms Beats 67.68% of users with Python3
+Memory 16.44 MB Beats 91.61% of users with Python3
+'''
