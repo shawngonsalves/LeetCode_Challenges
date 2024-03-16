@@ -26,7 +26,7 @@ class Solution:
         zero, one = 0, 0
 
         longest = 0
-        diff_index = {}
+        diff_index = {} # count[1] - count[0] -> index
 
         for i, n in enumerate(nums):
             if n == 0:
