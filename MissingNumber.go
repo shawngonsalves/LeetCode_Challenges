@@ -36,3 +36,18 @@ func missingNumber(nums []int) int {
 
 // Runtime 11 ms Beats 86.36% of users with Go
 // Memory 6.45 MB Beats 44.27% of users with Go
+
+func missingNumber(nums []int) int {
+    N := len(nums)
+    expected_Sum := (N*(N+1))/2
+    actual_Sum := 0
+
+    for _, num:= range nums {
+        actual_Sum += num
+    }
+    return expected_Sum - actual_Sum
+    
+}
+
+//Runtime 9 ms Beats 93.23% of users with Go
+//Memory 6.49 MB Beats 44.27% of users with Go
