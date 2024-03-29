@@ -38,7 +38,7 @@ class Solution:
                 max_val_count += 1
 
             
-            while max_val_count == k:
+            while max_val_count >= k:
                 if nums[l] == max_val:
                     max_val_count -= 1
                 l += 1
